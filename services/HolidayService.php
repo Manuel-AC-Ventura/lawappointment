@@ -6,8 +6,8 @@ class HolidayService extends Service {
 	private $apiKey;
 
 	public function __construct() {
-		$dotenv = Dotenv::createImmutable(__DIR__ . '/../../../');
-		$dotenv->load();
+		$dotenv = Dotenv::createImmutable(__DIR__ . '/../'); 
+        $dotenv->load();
 
 		$this->apiKey = $_ENV['API_KEY'] ?? null;
 	}
