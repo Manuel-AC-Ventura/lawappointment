@@ -54,6 +54,7 @@ class Users extends Model{
         }
     }
     public function logout(){
-
+        unset($_SESSION['lawappointment']);
+        return true;
     }
 }
